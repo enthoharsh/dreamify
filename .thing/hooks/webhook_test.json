@@ -1,0 +1,79 @@
+{
+  "data": {
+    "backup_code_enabled": false,
+    "banned": false,
+    "create_organization_enabled": true,
+    "created_at": 1709710747719,
+    "delete_self_enabled": true,
+    "email_addresses": [
+      {
+        "email_address": "harsh.reddotapps@gmail.com",
+        "id": "idn_2dJ0BdYOMbjeiRZIXZy1ozf5vAj",
+        "linked_to": [
+          {
+            "id": "idn_2dJ0BioNIgSPs70i9CIjIRxs2Er",
+            "type": "oauth_google"
+          }
+        ],
+        "object": "email_address",
+        "reserved": false,
+        "verification": {
+          "attempts": null,
+          "expire_at": null,
+          "status": "verified",
+          "strategy": "from_oauth_google"
+        }
+      }
+    ],
+    "external_accounts": [
+      {
+        "approved_scopes": "email https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid profile",
+        "email_address": "harsh.reddotapps@gmail.com",
+        "family_name": "Thakur",
+        "given_name": "Harsh",
+        "google_id": "110264233890900317598",
+        "id": "idn_2dJ0BioNIgSPs70i9CIjIRxs2Er",
+        "label": null,
+        "object": "google_account",
+        "picture": "https://lh3.googleusercontent.com/a/ACg8ocKZRKJoLEtrqHIGMMGZq0GGiVjRUix0tY3hcR3Dcs5C=s1000-c",
+        "public_metadata": {},
+        "username": null,
+        "verification": {
+          "attempts": null,
+          "expire_at": 1709711327911,
+          "status": "verified",
+          "strategy": "oauth_google"
+        }
+      }
+    ],
+    "external_id": null,
+    "first_name": "Harsh",
+    "has_image": true,
+    "id": "user_2dJ0Ce1iGBrwELqK4oGJYTDkzor",
+    "image_url": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZEowQ2pSSzM0N0pmZkM5ZHBlOWpHSTR1ZkMifQ",
+    "last_active_at": 1709710747718,
+    "last_name": "Thakur",
+    "last_sign_in_at": null,
+    "locked": false,
+    "lockout_expires_in_seconds": null,
+    "object": "user",
+    "password_enabled": false,
+    "phone_numbers": [],
+    "primary_email_address_id": "idn_2dJ0BdYOMbjeiRZIXZy1ozf5vAj",
+    "primary_phone_number_id": null,
+    "primary_web3_wallet_id": null,
+    "private_metadata": {},
+    "profile_image_url": "https://images.clerk.dev/oauth_google/img_2dJ0CjRK347JffC9dpe9jGI4ufC",
+    "public_metadata": {},
+    "saml_accounts": [],
+    "totp_enabled": false,
+    "two_factor_enabled": false,
+    "unsafe_metadata": {},
+    "updated_at": 1709710747789,
+    "username": "hustler",
+    "verification_attempts_remaining": 100,
+    "web3_wallets": []
+  },
+  "object": "event",
+  "type": "user.created"
+}
