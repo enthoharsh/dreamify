@@ -14,18 +14,31 @@ import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import { navLinks } from '@/constant'
 import { usePathname } from 'next/navigation'
 import { Button } from '../ui/button'
-
+const Logo =()=>(
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 25 35"
+      width="250"
+      height="100"
+      fill="#695eff" // Purple color
+    >
+      <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontSize="16">
+        ✨Dreamify
+      </text>
+    </svg>
+)
 const MobileNav = () => {
     const pathname = usePathname();
     return (
         <header className='header' >
             <Link href={'/'} className='flex item-center gap-2 md:py-2'>
-                <Image
+                {/* <Image
                     src={'/assets/images/logo-text.svg'}
                     alt='logo'
                     width={180}
                     height={28}
-                />
+                /> */}
+                <Logo/>
             </Link>
             <nav className='flex gap-2'>
                 <SignedIn>
@@ -34,12 +47,13 @@ const MobileNav = () => {
                         <SheetTrigger><Image src={'/assets/icons/menu.svg'} width={32} height={32} className='cursor-pointer' alt='icon'/></SheetTrigger>
                         <SheetContent className='sheet-content sm:w-64'>
                             <>
-                            <Image 
+                            {/* <Image 
                             src={'/assets/images/logo-text.svg'}
                             alt='logo'
                             width={152}
                             height={23}
-                            />
+                            /> */}
+                            <Logo/>
                             <ul className='header-nav_elements'>
                     {
                         navLinks.map((link)=>{

@@ -6,14 +6,27 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
-
+const Logo =()=>(
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 25 35"
+      width="500"
+      height="100"
+      fill="#695eff" // Purple color
+    >
+      <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontSize="16">
+        ✨Dreamify
+      </text>
+    </svg>
+)
 const Sidebar = () => {
     const pathname = usePathname();
   return (
     <aside className='sidebar'>
       <div className='flex size-full flex-col gap-4'>
         <Link href={'/'} className='sidebar-logo'>
-            <Image src={'/assets/images/logo-text.svg'} alt='logo' width={180} height={28}/>
+            {/* <Image src={'/assets/images/logo-text.svg'} alt='logo' width={180} height={28}/> */}
+            <Logo/>
         </Link>
         <nav className='sidebar-nav'>
             <SignedIn>
